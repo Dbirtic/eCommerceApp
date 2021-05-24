@@ -1,0 +1,1 @@
+This is a vanilla javascript eCommece site which will be done only using pure frontend functionalities with HTML, CSS and javascript. Everything will be done by hand from scratch for learning purposes. This will look like an eCommerce site but won't have backend implemented. 
