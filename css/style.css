@@ -24,6 +24,22 @@
     padding-right: 50px;
 }
 
+.navi a{
+    font-size: 1.2rem;
+}
+
+a{
+    color: rgb(141, 101, 0);    
+}
+
+.active{
+    color: rgb(211, 180, 2);
+}
+
+a:hover{
+    color: #fde400;
+}
+
 .main-container{
     height: 83vh;
     display: flex;
