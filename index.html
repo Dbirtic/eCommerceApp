@@ -16,6 +16,7 @@
         </div>
         <div class="main-container">
             <h1>Welcome to my website</h1>
+            <button class="press">Press Me</button>
         </div>
         <footer>
             <h1>I'm a footer 2021@dbirtic</h1>
@@ -23,5 +24,15 @@
     </div>   
 
     <script src="js/main.js"></script>
+    <script>
+        let counter = localStorage.getItem("counter");
+        if(counter === null)
+        {
+            counter = 0;
+        }
+        counter++;
+        localStorage.setItem("counter", counter);
+        document.getElementById("counter").innerHTML = counter;
+    </script>
 </body>
 </html>
