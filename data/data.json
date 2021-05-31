@@ -1,13 +1,13 @@
-export default {
-    products: [
+{
+    "products": [
         {
-            _id: '111111111111111111111111',
-            name: 'Jim Root Telecaster',
-            category: 'Guitars',
-            image: 'images/product-1.jpg',
-            price: 1500,
-            brand: 'Fender',
-            rating: 4.5,
+            "_id": "111111111111111111111111",
+            "name": "Jim Root Telecaster",
+            "category": "Guitars",
+            "image": "images/product-1.jpg",
+            "price": 1500,
+            "brand": "Fender",
+            "rating": 4.5,
             numReview: 1500,
             countInStock: 6,
             description: "This is a metal Telecaster with pair of EMGs, a mahogany body and neck, made for shredding and chugs.",
