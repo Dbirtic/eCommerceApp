@@ -11,7 +11,11 @@ const searchData = async () =>{
 
     if(data.length > 0){
         const html = data.map(info => `
-        <div class="card card-body mb-1">
+        <div class="">
+            <h4>${info.name}</h4>
+            <h4>${info.category}</h4>
+            <img src="${info.image}" width="100" height="200">
+            <h4>${info.price}</h4>
             <h4>${info.brand}</h4>
         </div>
         `).join('');
