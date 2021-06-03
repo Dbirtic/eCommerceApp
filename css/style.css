@@ -49,10 +49,15 @@ a:hover{
 .main-container{
     height: 83vh;
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     color: #fff;
     background-color: darkolivegreen;
+}
+
+.products{
+    display: ruby;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Footer */
