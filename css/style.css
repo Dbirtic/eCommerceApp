@@ -56,8 +56,12 @@ a:hover{
 
 .products{
     display: ruby;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin: 2rem;
+    height: 45rem;
+}
+
+.products ul{
+    list-style-type: none;
 }
 
 /* Footer */
