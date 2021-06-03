@@ -6,10 +6,17 @@ const searchData = async () =>{
     const res = await fetch('../data/data.json');
     const data = await res.json();
 
-    console.log(typeof(data));
-    console.log(data.length);
-
     if(data.length > 0){
+        data.map(info =>{
+            let product = localStorage.getItem('product');
+            if(product === null)
+            {
+                // Next to do!
+                // napraviti spremanje svega iz data.json-a na local storage
+                product += info;
+            }
+            console.log(product);
+        });
         const html = data.map(info => `
         <div class="products">
             <ul>
