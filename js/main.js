@@ -11,7 +11,7 @@ const searchData = async () =>{
 
     if(data.length > 0){
         const html = data.map(info => `
-        <div class="">
+        <div class=".products">
             <h4>${info.name}</h4>
             <h4>${info.category}</h4>
             <img src="${info.image}" width="100" height="200">
