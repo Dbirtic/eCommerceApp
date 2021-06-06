@@ -14,7 +14,8 @@ const searchData = async () =>{
             {
                 // Next to do!
                 // napraviti spremanje svega iz data.json-a na local storage
-                localStorage.setItem('product', JSON.stringify({product}));
+                
+                //localStorage.setItem('product', JSON.stringify({product}));
             }
             console.log(product);
         });
