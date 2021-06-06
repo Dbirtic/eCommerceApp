@@ -6,19 +6,23 @@ const searchData = async () =>{
     const res = await fetch('../data/data.json');
     const data = await res.json();
 
+    //
     if(data.length > 0){
         data.map(info =>{
-            let product = localStorage.getItem('product');
-            console.log(info);
-            if(product === null)
-            {
-                // Next to do!
-                // napraviti spremanje svega iz data.json-a na local storage
-                
-                //localStorage.setItem('product', JSON.stringify({product}));
-            }
+            const product = JSON.parse(localStorage.getItem('product'));
             console.log(product);
+            console.log(product["product"]);
+            if(product["product"] === null){
+                localStorage.setItem('product', JSON.stringify({info}));
+            }
+            else if(product["product"] !== info){
+                localStorage.setItem('product', JSON.stringify({info}));
+            }
+            // Next to do!
+            // napraviti spremanje svega iz data.json-a na local storage
+            console.log(info);
         });
+
         const html = data.map(info =>`
         <div class="products">
             <ul>
@@ -35,4 +39,5 @@ const searchData = async () =>{
     }
 }
 
+// not supposed to be called searchData, this name is subject to change
 searchData();

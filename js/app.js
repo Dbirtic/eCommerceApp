@@ -18,3 +18,8 @@ const onNavigate = (pathname) =>{
          );
     rootDiv.innerHTML = routes[pathname];
 }
+
+// window on pop state should be returning to the previous page
+window.onpopstate = () =>{
+    rootDiv.innerHTML = routes[window.location.pathname];
+}
