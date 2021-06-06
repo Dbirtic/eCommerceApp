@@ -6,8 +6,9 @@ const searchData = async () =>{
     const res = await fetch('../data/data.json');
     const data = await res.json();
 
-    //
+    
     if(data.length > 0){
+        // if this part isn't needed then it can be commented and removed later
         data.map(info =>{
             const product = JSON.parse(localStorage.getItem('product'));
             console.log(product);
@@ -19,9 +20,11 @@ const searchData = async () =>{
                 localStorage.setItem('product', JSON.stringify({info}));
             }
             // Next to do!
-            // napraviti spremanje svega iz data.json-a na local storage
             console.log(info);
         });
+
+        // saving data from data.json into the localStorage
+        localStorage.setItem('product', JSON.stringify({data}));
 
         const html = data.map(info =>`
         <div class="products">
