@@ -54,6 +54,15 @@ a:hover{
     background-color: darkolivegreen;
 }
 
+.main-container h1{
+    text-align: center;
+}
+
+.main-container h3{
+    text-align: center;
+    font-size: 25px;
+}
+
 .products{
     display: ruby;
     margin: 2rem;

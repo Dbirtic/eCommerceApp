@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <title>eCommerce</title>
-</head>
-<body>
+const home = `
     <div class="grid-container">
         <div class="header">
             <div class="navi">
@@ -32,18 +23,5 @@
         <footer>
             <h1>2021@dbirtic</h1>
         </footer>
-    </div>   
-
-    <script src="js/main.js"></script>
-    <script>
-        let counter = localStorage.getItem("counter");
-        if(counter === null)
-        {
-            counter = 0;
-        }
-        counter++;
-        localStorage.setItem("counter", counter);
-        document.getElementById("counter").innerHTML = counter;
-    </script>
-</body>
-</html>
+    </div>
+`;
