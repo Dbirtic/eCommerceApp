@@ -1,6 +1,6 @@
 [
     {
-        "_id": "111111111111111111111111",
+        "_id": "1",
         "name": "Jim Root Telecaster",
         "category": "Guitars",
         "image": "images/product-1.jpg",
@@ -12,7 +12,7 @@
         "description": "This is a metal Telecaster with pair of EMGs, a mahogany body and neck, made for shredding and chugs."
     },
     {
-        "_id": "222222222222222222222222",
+        "_id": "2",
         "name": "JS32R black",
         "category": "Guitars",
         "image": "images/product-2.jpg",
@@ -24,7 +24,7 @@
         "description": "This is a lower-end Jackson guitar with a Randy Rhoads shape body."
     },
     {
-        "_id": "333333333333333333333333",
+        "_id": "3",
         "name": "JS32R red",
         "category": "Guitars",
         "image": "images/product-3.jpg",
