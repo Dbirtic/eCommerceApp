@@ -11,16 +11,14 @@ const showProducts = async () =>{
         // if this part isn't needed then it can be commented and removed later
         data.map(info =>{
             const product = JSON.parse(localStorage.getItem('product'));
-            console.log(product);
-            console.log(product["product"]);
+            /*console.log(product);
+            console.log(product["product"]);*/
             if(product["product"] === null){
                 localStorage.setItem('product', JSON.stringify({info}));
             }
             else if(product["product"] !== info){
                 localStorage.setItem('product', JSON.stringify({info}));
             }
-            // Next to do!
-            console.log(info);
         });
 
         // saving data from data.json into the localStorage
@@ -31,7 +29,7 @@ const showProducts = async () =>{
             <ul>
                 <li>Name: ${info.name}</li>
                 <li>Category: ${info.category}</li>
-                <li><a href="/products/${info._id}"><img src="${info.image}" width="100" height="200"></a></li>
+                <li><a href="/products/${info._id}.html"><img src="${info.image}" width="100" height="200"></a></li>
                 <li>Price: ${info.price}$</li>
                 <li>${info.brand}</li>
             </ul>
@@ -42,5 +40,4 @@ const showProducts = async () =>{
     }
 }
 
-// not supposed to be called searchData, this name is subject to change
 showProducts();

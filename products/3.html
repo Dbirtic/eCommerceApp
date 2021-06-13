@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>eCommerce</title>
 </head>
 <body>
-    
+    <div class="grid-container">
+        <div class="header">
+            <div class="navi">
+                <a href="/index.html">Home</a>
+                <a href="/profile.html">Profile</a>
+                <a href="/cart.html" >Cart</a>
+                <a href="/#">Log In</a>
+                <a href="/#">Register</a>
+            </div>
+            <h1 id="header-text">I'm a header</h1>
+            <h1 id="counter">1</h1>
+        </div>
+        <div class="main-container">
+            <div class="product-data">
+
+            </div>
+        </div>
+        <footer>
+            <h1>2021@dbirtic</h1>
+        </footer>
+    </div>
+    <script src="../js/main.js"></script>
+    <script>
+        let counter = localStorage.getItem("counter");
+        if(counter === null)
+        {
+            counter = 0;
+        }
+        counter++;
+        localStorage.setItem("counter", counter);
+        document.getElementById("counter").innerHTML = counter;
+    </script>
 </body>
 </html>

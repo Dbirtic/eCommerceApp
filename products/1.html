@@ -11,7 +11,7 @@
     <div class="grid-container">
         <div class="header">
             <div class="navi">
-                <a href="/index.html" class="active">Home</a>
+                <a href="/index.html">Home</a>
                 <a href="/profile.html">Profile</a>
                 <a href="/cart.html" >Cart</a>
                 <a href="/#">Log In</a>
@@ -30,6 +30,15 @@
         </footer>
     </div>
     <script src="../js/main.js"></script>
-    
+    <script>
+        let counter = localStorage.getItem("counter");
+        if(counter === null)
+        {
+            counter = 0;
+        }
+        counter++;
+        localStorage.setItem("counter", counter);
+        document.getElementById("counter").innerHTML = counter;
+    </script>
 </body>
 </html>
