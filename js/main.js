@@ -2,7 +2,7 @@ const productList = document.getElementById("product-list");
 
 // function which will display products onto page with their info
 // work in progress though
-const searchData = async () =>{
+const showProducts = async () =>{
     const res = await fetch('../data/data.json');
     const data = await res.json();
 
@@ -43,4 +43,4 @@ const searchData = async () =>{
 }
 
 // not supposed to be called searchData, this name is subject to change
-searchData();
+showProducts();
