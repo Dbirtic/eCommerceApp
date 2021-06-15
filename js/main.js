@@ -41,9 +41,3 @@ const showProducts = async () =>{
 }
 
 showProducts();
-
-// function for parsing URL
-export const parseRequestURL = () =>{
-    const url = document.location.hash.toLowerCase();
-    console.log(url);
-}
