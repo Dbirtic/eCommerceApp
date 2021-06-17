@@ -11,8 +11,10 @@ console.log(productNum);
 
 const data = JSON.parse(localStorage.getItem('product'));
 
-console.log("data: "+data);
+//console.log("data: "+data);
 
-console.log("data[0]: " + data[0]);
+//console.log("data[0]: " + data[0]);
+console.log(typeof data);
+console.log(data['data']);
 
 products.innerHTML = `<h1>Subject to Change</h1>`;
