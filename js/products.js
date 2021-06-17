@@ -9,4 +9,8 @@ console.log(productNum);
 // TO DO: use map function and compare the data with the product number to display it's data
 // data can be also taken from the localStorage
 
+const data = localStorage.getItem('product');
+
+console.log("data: "+data);
+
 products.innerHTML = `<h1>Subject to Change</h1>`;
