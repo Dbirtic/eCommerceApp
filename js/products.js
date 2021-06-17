@@ -17,4 +17,21 @@ const data = JSON.parse(localStorage.getItem('product'));
 console.log(typeof data);
 console.log(data['data']);
 
-products.innerHTML = `<h1>Subject to Change</h1>`;
+data['data'].map(product => {
+    //console.log(product);
+    if(product._id === productNum){
+        console.log(product.image);
+        products.innerHTML = `
+        <div class="products">
+            <ul>
+                <li>Name: ${product.name}</li>
+                <li>Category: ${product.category}</li>
+                <li><img src="../${product.image}" width="300" height="450"></li>
+                <li>Price: ${product.price}$</li>
+                <li>${product.brand}</li>
+            </ul>
+        </div>
+        `;
+    }
+});
+
