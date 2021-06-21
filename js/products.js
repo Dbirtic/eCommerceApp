@@ -1,4 +1,5 @@
 const products = document.querySelector('.product-data');
+const productPrice = document.querySelector('.product-price');
 
 const url = document.location.pathname.split('/');
 
@@ -32,6 +33,7 @@ data['data'].map(product => {
             </ul>
         </div>
         `;
+        productPrice.innerHTML = `Product price is: ${product.price}$`;
     }
 });
 
