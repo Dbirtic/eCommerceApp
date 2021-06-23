@@ -98,7 +98,7 @@ body{
 }
 
 .rating li{
-    list-style: none;
+    list-style-type: none;
 }
 
 .rating-item{
@@ -117,3 +117,12 @@ body{
     content: "\2606";
 }
 
+/* on hover make all full */
+.rating:hover .rating-item::before{
+    content: "\2605";
+}
+
+/* make until the hovered (the rest) empty */
+.rating-item:hover ~ .rating-item::before{
+    content: "\2606";
+}
