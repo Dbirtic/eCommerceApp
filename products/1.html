@@ -36,9 +36,13 @@
                                     <textarea id="review-textarea"></textarea>
                                 </td>
                                 <td>
-                                    <div class="stars-outer">
-                                        <div class="stars-inner"></div>
-                                    </div>
+                                    <ul class="rating">
+                                        <li class="rating-item active" data-rate="1"></li>
+                                        <li class="rating-item" data-rate="2"></li>
+                                        <li class="rating-item" data-rate="3"></li>
+                                        <li class="rating-item" data-rate="4"></li>
+                                        <li class="rating-item" data-rate="5"></li>
+                                    </ul>
                                 </td>
                             </tr>
                             <tr>
@@ -73,6 +77,24 @@
     </div>
     <script src="../js/products.js"></script>
     <script>
+        // rating code
+        const rating = document.querySelector('.rating');
+        const ratingItems = document.querySelectorAll('.rating-item');
+
+        
+
+        rating.onclick = e => {
+            const elementClass = e.target.classList;
+            if(!elementClass.contains('active')){
+                ratingItems.forEach(item => {
+                    item.classList.remove('active');
+                });
+                elementClass.add('active');
+                console.log(e.target.getAttribute("data-rate"));
+            }
+        }
+
+        // counter code
         let counter = localStorage.getItem("counter");
         if(counter === null)
         {
