@@ -69,7 +69,6 @@ a:hover{
 
 .products{
     display: ruby;
-    margin: 1rem;
     height: 45rem;
 }
 
@@ -108,9 +107,7 @@ body{
 .rating-item{
     cursor: pointer;
     font-size: 2rem;
-    color: #fde400;
-    border: 0.1rem;
-    border-color: #333;
+    color: #d3be00;
 }
 
 /* initial make all full */
@@ -136,7 +133,16 @@ body{
 /* Review space */
 .review-div{
     display: ruby;
-    margin: 1rem;
+    margin-left: 2rem;
+    width: 100%;
+}
+
+.review-div table{
+    border:1px solid #333;
+}
+
+.review-textarea{
+    
 }
 
 
@@ -145,7 +151,7 @@ button:hover{
     cursor: pointer;
 }
 button{
-    font: 1.4rem helvetica;
+    font: 1.2rem helvetica;
     color: #a00;
     background-color: lightcyan;
 }
