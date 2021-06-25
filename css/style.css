@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .grid-container {
     display: grid;
     grid-template-areas: 
@@ -126,3 +130,5 @@ body{
 .rating-item:hover ~ .rating-item::before{
     content: "\2606";
 }
+
+/* Button */
