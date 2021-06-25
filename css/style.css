@@ -138,11 +138,12 @@ body{
 }
 
 .review-div table{
-    border:1px solid #333;
+    border-top:1px solid #333;
 }
 
-.review-textarea{
-    
+#review-text{
+    width: 300px;
+    height: 95px;
 }
 
 
