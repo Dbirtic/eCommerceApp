@@ -70,6 +70,7 @@ a:hover{
 .products{
     display: ruby;
     height: 45rem;
+    font-size: 20px;
 }
 
 .products ul{
@@ -155,4 +156,16 @@ button{
     font: 1.2rem helvetica;
     color: #a00;
     background-color: lightcyan;
+    border: 0.1rem #303030 solid;
+    border-radius: 0.5rem;
+}
+
+/* Add to cart */
+.addToCart{
+    font-size: 35px;
+    align-items: center;
+}
+
+.product-price{
+    font-size: 20px;
 }

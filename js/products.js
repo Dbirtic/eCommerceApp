@@ -28,7 +28,7 @@ data['data'].map(product => {
             </ul>
         </div>
         `;
-        productPrice.innerHTML = `Product price is: ${product.price}$`;
+        productPrice.innerHTML = `<p>Product price is: ${product.price}$</p>`;
     }
 });
 
