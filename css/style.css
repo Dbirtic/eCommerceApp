@@ -56,6 +56,8 @@ a:hover{
     width: 100%;
     color: #333;
     background-color: #ddd;
+    flex-wrap: wrap;
+    flex: 2 1 30rem;
 }
 
 .main-container h1{
@@ -167,6 +169,7 @@ button{
 .addToCart{
     font-size: 35px;
     align-items: center;
+    flex: 1 1 30rem;
 }
 
 .product-price{
