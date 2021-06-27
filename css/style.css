@@ -56,8 +56,6 @@ a:hover{
     width: 100%;
     color: #333;
     background-color: #ddd;
-    flex-wrap: wrap;
-    flex: 2 1 30rem;
 }
 
 .main-container h1{
@@ -73,6 +71,7 @@ a:hover{
     display: ruby;
     height: 45rem;
     font-size: 20px;
+    justify-content: center;
 }
 
 .products ul{
@@ -168,8 +167,6 @@ button{
 /* Add to cart */
 .addToCart{
     font-size: 35px;
-    align-items: center;
-    flex: 1 1 30rem;
 }
 
 .product-price{
