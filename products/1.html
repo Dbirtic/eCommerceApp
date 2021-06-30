@@ -22,12 +22,19 @@
             <h1 id="counter">1</h1>
         </div>
         <div class="main-container">
-            <ul class="menu">
-                <li class="menu-active">
-                    <div class="menu-div">
-                        <h1>Menu</h1>
-                    </div>
-                </li>
+            <ul class="menu on">
+                <h1>Menu</h1>
+                <div class="menu-div">
+                    <li>
+                        <a href="/#/">link_1</a>
+                    </li>        
+                    <li>
+                        <a href="/#/">link_2</a>
+                    </li>        
+                    <li>
+                        <a href="/#/">link_3</a>
+                    </li>        
+                </div>
             </ul>
             <ul>
                 <div class="product-data"></div>
@@ -85,6 +92,20 @@
     </div>
     <script src="../js/products.js"></script>
     <script>
+        // menu code
+        const menu = document.querySelector('.menu');
+
+        menu.onclick = e =>{
+            const menuClass = e.target.classList;
+            if(!menuClass.contains('on')){
+                menu.parentElement.classList.remove('on');
+                menu.parentElement.style.display = 'none';
+            }
+            else{
+                menuClass.parentElement.classList.add('on');
+                menu.parentElement.style.display = 'block';
+            }
+        }
         // rating code
         const rating = document.querySelector('.rating');
         const ratingItems = document.querySelectorAll('.rating-item');
