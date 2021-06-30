@@ -173,3 +173,11 @@ button{
 .product-price{
     font-size: 20px;
 }
+
+/* Menu */
+.menu{
+    list-style-type: none;
+}
+.menu-div{
+    content: "\26EC";
+}
