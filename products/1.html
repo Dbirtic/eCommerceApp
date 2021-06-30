@@ -98,12 +98,14 @@
         menu.onclick = e =>{
             const menuClass = e.target.classList;
             if(!menuClass.contains('on')){
-                menu.parentElement.classList.remove('on');
-                menu.parentElement.style.display = 'none';
+                /*menu.parentElement.classList.remove('on');
+                menu.parentElement.style.display = 'none';*/
+                console.log(menu);
+                console.log(menuClass);
             }
             else{
                 menuClass.parentElement.classList.add('on');
-                menu.parentElement.style.display = 'block';
+                //menu.parentElement.style.display = 'block';
             }
         }
         // rating code
