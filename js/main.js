@@ -1,4 +1,32 @@
 const productList = document.getElementById("product-list");
+// menu code
+const menu = document.querySelector('.menu');
+
+menu.onclick = e =>{
+    const menuClass = e.target.classList;
+    console.log("0");
+    console.log(menuClass.contains('on'));
+    if(menu.classList.contains('on')){
+        console.log("1");
+        console.log(menu.classList.contains('on'));
+        menu.classList.remove('on');
+        menu.children[1].style.display = 'none';
+        /*console.log("menu: ");
+        console.log(menu);
+        console.log("menuClass: ");
+        console.log(menuClass);
+        console.log(menu.children[1]);*/
+        
+    }
+    else if(!menu.classList.contains('on')){
+        console.log("else menuClass: ");
+        console.log(menuClass);
+        console.log("does this work?");
+        menu.classList.add('on');
+        menu.children[1].style.display = 'block';
+        console.log(menu.classList.contains('on'));
+    }
+}
 
 // function which will display products onto page with their info
 // work in progress though

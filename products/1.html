@@ -91,27 +91,8 @@
         </footer>
     </div>
     <script src="../js/products.js"></script>
+    <script src="../js/main.js"></script>
     <script>
-        // menu code
-        const menu = document.querySelector('.menu');
-
-        menu.onclick = e =>{
-            const menuClass = e.target.classList;
-            if(!menuClass.contains('on')){
-                menu.classList.remove('on');
-                menu.style.content = "\26EC";
-                menu.childElement.style.display = 'none';
-                console.log("menu: ");
-                console.log(menu);
-                console.log("menuClass: ");
-                console.log(menuClass);
-                console.log(menu.children);
-            }
-            else{
-                menuClass.parentElement.classList.add('on');
-                menu.style.display = 'block';
-            }
-        }
         // rating code
         const rating = document.querySelector('.rating');
         const ratingItems = document.querySelectorAll('.rating-item');
