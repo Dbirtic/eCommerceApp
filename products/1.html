@@ -98,18 +98,18 @@
         menu.onclick = e =>{
             const menuClass = e.target.classList;
             if(!menuClass.contains('on')){
-                /*menu.classList.remove('on');
-                menu.style.display = 'none';*/
+                menu.classList.remove('on');
+                menu.style.content = "\26EC";
+                menu.childElement.style.display = 'none';
                 console.log("menu: ");
                 console.log(menu);
                 console.log("menuClass: ");
                 console.log(menuClass);
-                console.log("menu.parentElement: ");
-                console.log(menu.parentElement);
+                console.log(menu.children);
             }
             else{
                 menuClass.parentElement.classList.add('on');
-                //menu.style.display = 'block';
+                menu.style.display = 'block';
             }
         }
         // rating code
