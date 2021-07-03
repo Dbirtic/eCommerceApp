@@ -181,3 +181,7 @@ button{
 .menu-div{
     content: "\26EC";
 }
+
+.menu h1:hover{
+    cursor: pointer;
+}
