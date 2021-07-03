@@ -29,3 +29,7 @@ data['data'].map(product => {
     }
 });
 
+// TODO: add a function for adding to cart
+function addToCart(){
+    // function for adding a product to cart
+}
