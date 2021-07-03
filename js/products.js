@@ -1,19 +1,16 @@
 const products = document.querySelector('.product-data');
 const productPrice = document.querySelector('.product-price');
 
+// putting the data about the opened url into a variable
 const url = document.location.pathname.split('/');
 
 const productNumArr = url[2].split('.');
 const productNum = productNumArr[0];
 
-// TO DO: use map function and compare the data with the product number to display it's data
-// data can be also taken from the localStorage
-
+// reading product data from local storage
 const data = JSON.parse(localStorage.getItem('product'));
 
-/*console.log(typeof data);
-console.log(data['data']); */
-
+// comparing the product number from url with the data read from local storage to display data about product
 data['data'].map(product => {
     if(product._id === productNum){
         console.log(product.image);

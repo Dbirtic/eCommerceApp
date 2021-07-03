@@ -1,3 +1,5 @@
+// currently not being used
+
 // function for parsing URL
 export const parseRequestUrl = () => {
     const url = document.location.hash.toLowerCase();

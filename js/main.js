@@ -14,8 +14,13 @@ menu.onclick = () =>{
     }
 }
 
+// TODO:  create a function which will create a review card once it's submited using the submit button -> this can also be done in the products js file
+function addReview(){
+    // stubbed function for review
+}
+
 // function which will display products onto page with their info
-// work in progress though
+// this function should be in a seperate js file so that it don't create errors on other pages
 const showProducts = async () =>{
     const res = await fetch('../data/data.json');
     const data = await res.json();
@@ -25,8 +30,6 @@ const showProducts = async () =>{
         // if this part isn't needed then it can be commented and removed later
         data.map(info =>{
             const product = JSON.parse(localStorage.getItem('product'));
-            /*console.log(product);
-            console.log(product["product"]);*/
             if(product["product"] === null){
                 localStorage.setItem('product', JSON.stringify({info}));
             }
