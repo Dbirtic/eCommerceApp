@@ -13,7 +13,7 @@ const data = JSON.parse(localStorage.getItem('product'));
 // comparing the product number from url with the data read from local storage to display data about product
 data['data'].map(product => {
     if(product._id === productNum){
-        console.log(product.image);
+        //console.log(product.image);
         products.innerHTML = `
         <div class="products">
             <ul>
