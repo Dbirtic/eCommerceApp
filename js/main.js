@@ -53,7 +53,9 @@ const showProducts = async () =>{
         </div>
         `).join('');
 
-        productList.innerHTML = html;
+        if(productList !== null)
+            productList.innerHTML = html;
+        else console.log("product list is empty, not a page with product list element id");
     }
 }
 
