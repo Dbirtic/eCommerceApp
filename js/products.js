@@ -29,7 +29,16 @@ data['data'].map(product => {
     }
 });
 
+const buyProductBtn = document.querySelector('.buyProduct');
+
+buyProductBtn.addEventListener('onclick', addToCart)
+
 // TODO: add a function for adding to cart
 function addToCart(){
     // function for adding a product to cart
+    if(localStorage.getItem('cart') !== null)
+    {
+        localStorage.setItem('cart', JSON.stringify());
+    }
+        
 }
