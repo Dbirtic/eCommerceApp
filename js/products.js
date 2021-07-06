@@ -38,7 +38,17 @@ function addToCart(){
     // function for adding a product to cart
     if(localStorage.getItem('cart') !== null)
     {
-        localStorage.setItem('cart', JSON.stringify());
+        data['data'].map(product =>{
+            if(product._id === productNum){
+                localStorage.setItem('cart', JSON.stringify(product));
+            }
+        });
     }
-        
+    else{
+        data['data'].map(product =>{
+            if(product._id === productNum){
+                localStorage.setItem('cart', JSON.stringify(product));
+            }
+        });
+    }
 }
