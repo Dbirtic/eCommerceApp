@@ -32,7 +32,7 @@ data['data'].map(product => {
 const buyProductBtn = document.querySelector('.buyProduct');
 const itemAdded = document.querySelector('.item-added');
 
-buyProductBtn.addEventListener('onclick', addToCart)
+buyProductBtn.addEventListener('click', addToCart);
 
 // TODO: add a function for adding to cart
 function addToCart(){
