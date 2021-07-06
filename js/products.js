@@ -30,12 +30,14 @@ data['data'].map(product => {
 });
 
 const buyProductBtn = document.querySelector('.buyProduct');
+const itemAdded = document.querySelector('.item-added');
 
 buyProductBtn.addEventListener('onclick', addToCart)
 
 // TODO: add a function for adding to cart
 function addToCart(){
     // function for adding a product to cart
+    console.log('addToCart if');
     if(localStorage.getItem('cart') !== null)
     {
         data['data'].map(product =>{
@@ -43,12 +45,15 @@ function addToCart(){
                 localStorage.setItem('cart', JSON.stringify(product));
             }
         });
+        itemAdded.innerHTML = `<p>Item added</p>`;
     }
     else{
+        console.log('addToCart else');
         data['data'].map(product =>{
             if(product._id === productNum){
                 localStorage.setItem('cart', JSON.stringify(product));
             }
         });
+        itemAdded.innerHTML = `<p>Item added</p>`;
     }
 }
