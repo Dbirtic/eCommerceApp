@@ -2,3 +2,5 @@
 function showCart (){
     
 }
+
+showCart();
