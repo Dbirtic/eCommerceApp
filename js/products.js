@@ -34,10 +34,12 @@ const itemAdded = document.querySelector('.item-added');
 
 buyProductBtn.addEventListener('click', addToCart);
 
-// TODO: add a function for adding to cart
+// TODO: needs to be added to be able to add more than one items and not to overwrite the previous item
+// put objects to an array before adding them to localStorage, need to rework cart and other things then
 function addToCart(){
     // function for adding a product to cart
     console.log('addToCart if');
+    //console.log(localStorage.getItem('cart'));
     if(localStorage.getItem('cart') !== null)
     {
         data['data'].map(product =>{
@@ -47,7 +49,7 @@ function addToCart(){
         });
         itemAdded.innerHTML = `<p>Item added</p>`;
     }
-    else{
+    else if(localStorage.getItem('cart')){
         console.log('addToCart else');
         data['data'].map(product =>{
             if(product._id === productNum){
