@@ -6,10 +6,10 @@ function showCart (){
     console.log(products);
     cartList.innerHTML += `
     <ul>
-        <li>${products.name}</li>
-        <li>${products.image}</li>
-        <li>${products.price}</li>
-        <li>${products.countInStock}</li>
+        <li>Product name: ${products.name}</li>
+        <li><img src="${products.image}" width="75" height="125"></li>
+        <li>${products.price}$</li>
+        <li>Number of items in stock: ${products.countInStock}</li>
     </ul>
     `;
 }

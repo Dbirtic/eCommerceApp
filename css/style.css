@@ -185,3 +185,8 @@ button{
 .menu h1:hover{
     cursor: pointer;
 }
+
+/* Cart */
+.cart-list{
+    list-style-type: none;
+}
