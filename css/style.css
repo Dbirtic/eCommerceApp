@@ -187,6 +187,6 @@ button{
 }
 
 /* Cart */
-.cart-list{
+.cart-list ul{
     list-style-type: none;
 }
