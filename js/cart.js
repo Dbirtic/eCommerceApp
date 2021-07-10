@@ -4,7 +4,14 @@ const cartList = document.querySelector('.cart-list');
 function showCart (){
     const products = JSON.parse(localStorage.getItem('cart'));
     console.log(products);
-    //cartList.innerHTML += ``
+    cartList.innerHTML += `
+    <ul>
+        <li>${products.name}</li>
+        <li>${products.image}</li>
+        <li>${products.price}</li>
+        <li>${products.countInStock}</li>
+    </ul>
+    `;
 }
 
 showCart();
