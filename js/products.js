@@ -1,6 +1,6 @@
 const products = document.querySelector('.product-data');
 const productPrice = document.querySelector('.product-price');
-const productsArray = new Array();
+let productsArray = new Array();
 
 // putting the data about the opened url into a variable
 const url = document.location.pathname.split('/');
@@ -39,10 +39,11 @@ buyProductBtn.addEventListener('click', addToCart);
 // put objects to an array before adding them to localStorage, need to rework cart and other things then
 function addToCart(){
     // function for adding a product to cart
-    console.log('addToCart if');
+    console.log('addToCart beginning');
     //console.log(localStorage.getItem('cart'));
     if(localStorage.getItem('cart') !== null)
     {
+        console.log('addToCart if');
         data['data'].map(product =>{
             if(product._id === productNum){
                 productsArray.push(product);
@@ -50,7 +51,7 @@ function addToCart(){
         });
         itemAdded.innerHTML = `<p>Item added</p>`;
     }
-    else if(localStorage.getItem('cart')){
+    else{
         console.log('addToCart else');
         data['data'].map(product =>{
             if(product._id === productNum){
