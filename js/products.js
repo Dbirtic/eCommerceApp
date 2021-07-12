@@ -42,10 +42,6 @@ buyProductBtn.addEventListener('click', addToCart);
 function addToCart(){
     // function for adding a product to cart
     console.log('addToCart beginning');
-    const cart = JSON.parse(localStorage.getItem('cart'));
-    cart.map(item => {
-        productsArray.push(item);
-    });
     console.log("addToCart\nproductsArray: ", productsArray);
 
     //console.log(localStorage.getItem('cart'));
@@ -59,8 +55,12 @@ function addToCart(){
         });
         itemAdded.innerHTML = `<p>Item added</p>`;
     }
-    else{
+    else if(localStorage.getItem('cart') !== null){
         console.log('addToCart else');
+        const cart = JSON.parse(localStorage.getItem('cart'));
+        cart.map(item => {
+            productsArray.push(item);
+        });
         data['data'].map(product =>{
             if(product._id === productNum){
                 productsArray.push(product);
