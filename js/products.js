@@ -42,7 +42,10 @@ buyProductBtn.addEventListener('click', addToCart);
 function addToCart(){
     // function for adding a product to cart
     console.log('addToCart beginning');
-    productsArray.push(JSON.parse(localStorage.getItem('cart')));
+    const cart = JSON.parse(localStorage.getItem('cart'));
+    cart.map(item => {
+        productsArray.push(item);
+    });
     console.log("addToCart\nproductsArray: ", productsArray);
 
     //console.log(localStorage.getItem('cart'));
