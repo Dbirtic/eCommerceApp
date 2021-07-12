@@ -1,5 +1,6 @@
 const products = document.querySelector('.product-data');
 const productPrice = document.querySelector('.product-price');
+const productsArray = new Array();
 
 // putting the data about the opened url into a variable
 const url = document.location.pathname.split('/');
@@ -44,7 +45,7 @@ function addToCart(){
     {
         data['data'].map(product =>{
             if(product._id === productNum){
-                localStorage.setItem('cart', JSON.stringify(product));
+                productsArray.push(product);
             }
         });
         itemAdded.innerHTML = `<p>Item added</p>`;
@@ -53,9 +54,10 @@ function addToCart(){
         console.log('addToCart else');
         data['data'].map(product =>{
             if(product._id === productNum){
-                localStorage.setItem('cart', JSON.stringify(product));
+                productsArray.push(product);
             }
         });
         itemAdded.innerHTML = `<p>Item added</p>`;
     }
+    localStorage.setItem('cart', JSON.stringify(productsArray));
 }
