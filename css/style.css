@@ -187,6 +187,13 @@ button{
 }
 
 /* Cart */
-.cart-list ul{
-    list-style-type: none;
+.cart-list img{
+    transform: rotate(90deg);
+}
+.cart-list table{
+    width: 100%;
+}
+.cart-list td{
+    padding-right: 1.4rem;
+    padding-left: 1.4rem;
 }
