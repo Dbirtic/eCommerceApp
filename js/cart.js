@@ -4,6 +4,7 @@ const cartList = document.querySelector('.cart-list');
 function showCart (){
     const products = JSON.parse(localStorage.getItem('cart'));
     console.log(products);
+    console.log(products[0]);
     cartList.innerHTML += `
     <ul>
         <li>Product name: ${products.name}</li>
